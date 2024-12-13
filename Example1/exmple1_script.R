@@ -42,3 +42,4 @@ data_split <- initial_split(df, prop = 0.8) # Use 80% of the data for training
 train_data <- training(data_split)
 
 test_data  <- testing(data_split)
+
