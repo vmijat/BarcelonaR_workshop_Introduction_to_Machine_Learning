@@ -26,7 +26,8 @@ df %>% summary()
 
 # Nice way to visualise correlation ... you need {corrplot}
 library(corrplot)
-df %>% cor() %>% 
+df |> 
+  cor() |>  
   corrplot.mixed(upper = "circle",
                  tl.cex = 1,
                  tl.pos = 'lt',
